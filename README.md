@@ -30,6 +30,27 @@ Welcome to Mindful Web, a Chrome extension designed to help you browse with inte
 4. Click "Load unpacked" and select the `mindful-web-extension` folder.
 5. The extension should now appear in your extensions list.
 
+### Token Requirements
+
+- **Summarizer API**  
+  - Works natively in Chrome 138 and above.  
+  - **No token required.**
+
+- **Prompt API**  
+  - Also shipped in Chrome 138 and above.  
+  - **No token required.**
+
+- **Rewriter API**  
+  - Still in Origin Trial (experimental).  
+  - **Requires an Origin Trial token** for access.  
+  - Add it using:  
+    ```html
+    <meta http-equiv="origin-trial" content="Ai4Z74hX0/WBdK9qjJi+R9BIBodgmF6cdVci/n3vH/COgu6zzBTMPi4p1RM8KoujZ+rv1ZPCHbm3H823p3aAHQ4AAABjeyJvcmlnaW4iOiJodHRwczovL2FudXNoa2FyYXRuYXBhcmtoaS5naXRodWIuaW86NDQzIiwiZmVhdHVyZSI6IkFJUmV3cml0ZXJBUEkiLCJleHBpcnkiOjE3NzY3Mjk2MDB9
+">
+    ```
+  - Without this token, only the Summarizer and Prompt features will work.
+
+
 ### Icons
 
 You'll need the following PNG icons in the `icons/` directory:
